@@ -22,7 +22,11 @@ const instructions = Platform.select({
     'Shake or press menu button for dev menu',
 });
 
-class HomeScreen extends Component<{}> {
+class HomeScreen extends Component {
+
+  static navigationOptions = {
+    title: 'Welcome'
+  };
   render() {
     return (
       <View style={styles.container}>
